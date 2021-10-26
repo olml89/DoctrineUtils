@@ -13,9 +13,15 @@
   "require": {
     "php": "^8.0",
     "doctrine/orm": "^2.9",
-    "gedmo/doctrine-extensions": "^v3.2.0",
+    "gedmo/doctrine-extensions": "dev-doctrine-converter as 3.2.0",
     "nesbot/carbon": "3.x-dev"
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/olml89/DoctrineExtensions"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "Olml89\\": "src/"
